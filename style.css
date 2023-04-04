@@ -1,0 +1,538 @@
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+
+}
+
+body {
+	font-family: sans-serif;
+	font-weight: lighter;
+	margin: 0px;
+}
+
+a {
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-thickness: 3px;
+}
+
+a:hover {
+	color: lavender;
+}
+
+
+
+/* ------------------ DESKTOP STRUCTURE START ------------------ */
+
+body {
+	font-size: 4vmin;
+}
+
+.page1 {
+	display: grid;
+	grid-template-columns: 20px 30vw 55vw;
+	grid-template-rows: 80vh 20vh;
+	grid-template-areas:
+	". sidebar content"
+	". . content";
+
+
+	
+
+	background-color: rgba(240,200,240,0.4);
+	background-image: url("backgrounds/bg_6.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+
+}
+
+.page2 {
+	display: grid;
+	grid-template-columns: 20px 28vw 70vw;
+	grid-template-rows: 80vh 20vh;
+	grid-template-areas:
+	". sidebar content"
+	". . content";
+
+
+	
+
+	background-color: rgba(240,200,240,0.4);
+	background-image: url("backgrounds/bg_2.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: 60%;
+
+}
+
+.page3 {
+	display: grid;
+	grid-template-columns: 20px 30vw 60vw;
+	grid-template-rows: 80vh 20vh;
+	grid-template-areas:
+	". sidebar content"
+	". . content";
+
+
+	
+
+	background-color: rgba(240,200,240,0.4);
+	background-image: url("backgrounds/bg_4.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.index_page {
+	display: grid;
+
+	grid-template-columns: 10vw 80vw 10vw;
+	grid-template-rows: 22vh 60vh 18vh;
+
+	grid-template-areas:
+	". . ."
+	". title ."
+	". . .";
+
+	background-color: rgba(240,200,240,0.4);
+	background-image: url("backgrounds/bg_4.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.index_menu {
+	grid-area: title;
+
+	display: grid;
+
+	grid-template-columns: 100%;
+	grid-template-rows: 10% 30% 20% 20% 20%;
+
+	grid-template-areas:
+	"index_title"
+	"index_sub"
+	"index_1"
+	"index_2"
+	"index_3";
+
+	text-align: center;
+	place-content: center;
+	place-items: stretch;
+
+	padding: 5px;
+
+/*	border: 5px solid darkred;*/
+}
+
+.index_title {
+	grid-area: index_title;
+	font-weight: bold;
+	font-size: 8.5vmin;
+	text-decoration: none;
+	color: black;
+
+/*	border: 2px solid darkred;*/
+}
+
+.index_sub {
+	grid-area: index_sub;
+	font-weight: normal;
+	font-size: 3.5vmin;
+	text-decoration: none;
+	color: black;
+	
+/*	border: 2px solid yellow;*/
+}
+
+.index_1 {
+	grid-area: index_1;
+
+/*	border: 2px solid darkred;*/
+}
+
+.index_2 {
+	grid-area: index_2;
+
+/*	border: 2px solid darkred;*/
+}
+
+.index_3 {
+	grid-area: index_3;
+
+/*	border: 2px solid darkred;*/
+}
+
+
+
+
+.sidebar {
+	display: grid;
+	grid-area: sidebar;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0px;
+
+	grid-template-columns: 100%;
+	grid-template-rows: 20% 15% 20% 20% 20%;
+	grid-template-areas:
+	"side_title"
+	"side_sub"
+	"menu_1"
+	"menu_2"
+	"menu_3";
+
+	align-content: space-between;
+
+/*	border: 5px solid darkred;*/
+}
+
+.sidebar_title {
+	grid-area:side_title;
+	font-weight: bold;
+	font-size: 7vmin;
+	text-decoration: none;
+	color: black;
+	padding-top: 30px;
+	padding-bottom: 0px;
+
+/*	border: 2px solid darkred;*/
+}
+
+.sidebar_sub {
+	grid-area: side_sub;
+	font-weight: normal;
+	font-size: 3vmin;
+	text-decoration: none;
+	color: black;
+
+/*	border: 2px solid darkred;*/
+}
+
+.side_menu_1 {
+	grid-area: menu_1;
+
+/*	border: 2px solid darkred;*/
+}
+
+.side_menu_2 {
+	grid-area: menu_2;
+
+/*	border: 2px solid darkred;*/
+}
+
+.side_menu_3 {
+	grid-area: menu_3;
+
+/*	border: 2px solid darkred;*/
+}
+
+
+
+.sky_content {
+	display:grid;
+	grid-area: content;
+	
+	grid-template-rows: 24% 24% 24% 24% ;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-gap: 10px;
+	grid-template-areas:
+	"one one one one"
+	"two two three three"
+	"four four three three"
+	"five five five five";
+
+	margin: 15px;
+
+	place-content: stretch;
+	place-items: stretch;
+
+/*	border: 5px solid yellow;*/
+}
+
+.college_content {
+	display:grid;
+	grid-area: content;
+	
+	grid-template-rows: 32% 32% 32% ;
+	grid-template-columns: 49% 49%;
+	grid-gap: 10px;
+	grid-template-areas:
+	"one two"
+	"one two"
+	"one three";
+
+	margin: 15px;
+
+	place-content: stretch;
+	place-items: stretch;
+
+/*	border: 5px solid yellow;*/
+}
+
+.hs_content {
+	display:grid;
+	grid-area: content;
+	
+	grid-template-rows: 32% 32% 32% ;
+	grid-template-columns: 44% 54%;
+	grid-gap: 10px;
+	grid-template-areas:
+	"one four"
+	"two four"
+	"three four";
+
+	margin: 15px;
+
+	place-content: stretch;
+	place-items: stretch;
+
+/*	border: 5px solid yellow;*/
+}
+
+.image {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+
+}
+
+
+
+/* ------------------ DESKTOP STRUCTURE END ------------------ */
+
+
+
+
+/* ------------------ MOBILE STRUCTURE START ------------------ */
+
+@media only screen and (max-width: 800px) {
+
+	body {
+	font-size: 3vmin;
+	}
+
+	.page1 {
+		display: grid;
+		grid-template-columns: 95vw;
+		grid-template-rows: 1% 4% 90% 1%;
+		grid-template-areas:
+		"."
+		"sidebar"
+		"content"
+		".";
+		
+		justify-content: center;
+
+
+		background-image: url("backgrounds/bg_6.png");
+		background-size: cover;
+		background-repeat: repeat-y;
+		background-attachment: fixed;
+
+	}
+
+	.page2 {
+		display: grid;
+		grid-template-columns: 95vw;
+		grid-template-rows: 1% 8% 80% 3%;
+		grid-template-areas:
+		"."
+		"sidebar"
+		"content"
+		".";
+
+		justify-content: center;
+
+
+		background-image: url("backgrounds/bg_2.jpeg");
+		background-size: cover;
+		background-repeat: repeat-y;
+		background-attachment: fixed;
+
+	}
+
+	.page3 {
+		display: grid;
+		grid-template-columns: 95vw;
+		grid-template-rows: 1% 5% 80% 5%;
+		grid-template-areas:
+		"."
+		"sidebar"
+		"content"
+		".";
+
+		justify-content: center;
+
+		background-image: url("backgrounds/bg_4.jpeg");
+		background-size: cover;
+		background-repeat: repeat-y;
+		background-attachment: fixed;
+
+	}
+
+	.index_page {
+		display: grid;
+
+		grid-template-columns: 10vw 80vw 10vw;
+		grid-template-rows: 20vh 60vh 20vh;
+
+		grid-template-areas:
+		". . ."
+		". title ."
+		". . .";
+
+		background-color: rgba(240,200,240,0.4);
+		background-image: url("backgrounds/bg_4.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+
+	.index_menu {
+		grid-area: title;
+
+		display: grid;
+
+		grid-template-columns: 100%;
+		grid-template-rows: 10% 30% 20% 20% 20%;
+
+		grid-template-areas:
+		"index_title"
+		"index_sub"
+		"index_1"
+		"index_2"
+		"index_3";
+
+		text-align: center;
+		place-content: center;
+		place-items: stretch;
+
+		padding: 5px;
+
+	}
+
+	.index_title {
+		grid-area: index_title;
+		font-weight: bold;
+		font-size: 8vmin;
+		text-decoration: none;
+		color: black;
+
+	}
+
+	.index_sub {
+		grid-area: index_sub;
+		font-weight: normal;
+		font-size: 3vmin;
+		text-decoration: none;
+		color: black;
+		
+	}
+
+	.index_1 {
+		grid-area: index_1;
+
+	}
+
+	.index_2 {
+		grid-area: index_2;
+
+	}
+
+	.index_3 {
+		grid-area: index_3;
+
+	}
+
+
+
+	.sidebar {
+		display: grid;
+		grid-area: sidebar;
+		
+
+		grid-template-columns: 30% 23% 23% 23%;
+		grid-template-rows: 60% 30%;
+		grid-template-areas:
+		"side_title . . ."
+		"side_sub menu_1 menu_2 menu_3";
+
+		text-align: center;
+		justify-content: space-between;
+		justify-items: center;
+		align-content: end;
+		align-items: end;
+	}
+
+	.sidebar_title {
+		grid-area:side_title;
+		font-weight: bold;
+		font-size: 5vmin;
+		text-decoration: none;
+		color: black;
+
+	}
+
+	.sidebar_sub {
+		grid-area: side_sub;
+		font-weight: normal;
+		font-size: 2.5vmin;
+		text-decoration: none;
+		color: black;
+
+	}
+
+	.side_menu_1 {
+		grid-area: menu_1;
+
+	}
+
+	.side_menu_2 {
+		grid-area: menu_2;
+
+	}
+
+	.side_menu_3 {
+		grid-area: menu_3;
+
+	}
+
+
+
+	.sky_content {
+		display:flex;
+		grid-area: content;
+		flex-direction: column;
+	}
+
+	.college_content {
+		display:flex;
+		grid-area: content;
+		flex-direction: column;
+
+	}
+
+	.hs_content {
+		display:flex;
+		grid-area: content;
+		flex-direction: column;
+
+
+	}
+
+	.image {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	}
+
+}
+
+/* ------------------ MOBILE STRUCTURE END ------------------ */
+
